@@ -1,8 +1,8 @@
 galaxy_info:
     author: "Phoenix Gao"
-    license: BSD
+    license: MIT
     description: "Locale and timezone setup"
-    min_ansible_version: 1.4
+    min_ansible_version: 1.9
     platforms:
         -
             name: Debian
