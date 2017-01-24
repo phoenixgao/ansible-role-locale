@@ -1,0 +1,29 @@
+---
+-
+    name: Install locale
+    locale_gen:
+        name: "{{ item }}"
+        state: present
+    with_items:
+        - "en_US.UTF-8"
+
+-
+    name: Set default locale LC_ALL
+    become: true
+    ini_file:
+        state: present
+        dest: /etc/default/locale
+        section: null
+        option: LC_ALL
+        value: en_US.UTF-8
+
+-
+    name: Set default locale LANG
+    become: true
+    ini_file:
+        state: present
+        dest: /etc/default/locale
+        section: null
+        option: LANG
+        value: en_US.UTF-8
+# - name: Set timezone
