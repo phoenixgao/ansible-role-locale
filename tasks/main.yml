@@ -16,6 +16,7 @@
         section: null
         option: LC_ALL
         value: en_US.UTF-8
+        no_extra_spaces: true
 
 -
     name: Set default locale LANG
@@ -26,4 +27,5 @@
         section: null
         option: LANG
         value: en_US.UTF-8
+        no_extra_spaces: true
 # - name: Set timezone
